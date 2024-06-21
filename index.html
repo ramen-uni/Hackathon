@@ -143,6 +143,27 @@
 	<script>
 		$('#js-sidebar').click(function () {
 			$('.ui.sidebar').sidebar('toggle');
+			$('.ui.sidebar .item').on('click', function () {
+				// サイドバーを閉じる
+				$('.ui.sidebar').sidebar('hide');
+			});
+		});
+		$(document).ready(function () {
+			$('.ui.vertical.menu a').on('click', function (e) {
+				e.preventDefault();
+
+				var target = $(this).attr('href');
+
+				// 遅延時間を設定（ミリ秒単位）
+				var delay = 500; // 例として0.5秒の遅延
+
+				// 遅延後にスムーススクロールを実行
+				setTimeout(function () {
+					$('html, body').animate({
+						scrollTop: $(target).offset().top
+					}, 1000); // スクロールにかかる時間（ミリ秒単位）
+				}, delay);
+			});
 		});
 	</script>
 
