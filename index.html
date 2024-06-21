@@ -8,6 +8,10 @@
 	<!-- CDNのコード -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 	<style>
+		.wrap_original {
+			overflow: hidden;
+		}
+
 		.image-container {
 			position: relative;
 			display: inline-block;
@@ -50,79 +54,80 @@
 </head>
 
 <body>
-
-	<div class="ui inverted menu">
-		<a class="item" href="index.html">Hack-a-Sen</a>
-		<a class="item" href="#section1">概要</a>
-		<a class="item" href="#section2">当日の流れ</a>
-		<a class="item" href="#section3">賞品</a>
-		<a class="item" href="#section4">評価基準</a>
-		<a class="item" href="#section5">エントリーはこちら</a>
-	</div>
-
-	<div class="ui container">
-		<header>
-			<div class="image-container">
-				<img class="ui fluid image" src="marble.jpg">
-				<div class="overlay">
-					<div class="text-background">
-						Hackathon's Name<br>
-						<span class="small-text">Hack-a-SEN presents</span>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<div class="ui stackable grid">
-			<div class="sixteen wide mobile eight wide tablet four wide computer column">
-				<div class="ui segment">
-					<h2 id="section1" class="ui header">概要</h2>
-					<p>これはPCとスマホで表示されるコンテンツです。</p>
-				</div>
-			</div>
-			<div class="sixteen wide mobile eight wide tablet four wide computer column">
-				<div class="ui segment">
-					<h2 id="section2" class="ui header">当日の流れ</h2>
-					<p>これはPCとスマホで表示されるコンテンツです。</p>
-				</div>
-			</div>
-			<div class="sixteen wide mobile eight wide tablet four wide computer column">
-				<div class="ui segment">
-					<h2 id="section3" class="ui header">賞品</h2>
-					<p>これはPCとスマホで表示されるコンテンツです。</p>
-				</div>
-			</div>
-			<div class="sixteen wide mobile eight wide tablet four wide computer column">
-				<div class="ui segment">
-					<h2 id="section4" class="ui header">評価基準</h2>
-					<p>これはPCとスマホで表示されるコンテンツです。</p>
-				</div>
-			</div>
-			<div class="sixteen wide mobile eight wide tablet four wide computer column">
-				<div class="ui segment">
-					<h2 id="section5" class="ui header">エントリーフォーム</h2>
-					<p><button onclick="location.href='https://forms.gle/xMdnH2rU9mcv85mz5'" class="ui green button">
-							エントリーはこちら
-						</button></p>
-				</div>
-			</div>
+	<div class="wrap_original">
+		<div class="ui inverted menu">
+			<a class="item" href="index.html">Hack-a-Sen</a>
+			<a class="item" href="#section1">概要</a>
+			<a class="item" href="#section2">当日の流れ</a>
+			<a class="item" href="#section3">賞品</a>
+			<a class="item" href="#section4">評価基準</a>
+			<a class="item" href="#section5">エントリーはこちら</a>
 		</div>
 
-		<footer>
-			<div class="ui inverted vertical footer segment">
-				<div class="ui center aligned container">
-					<div class="ui stackable inverted divided grid">
+		<div class="ui container">
+			<header>
+				<div class="image-container">
+					<img class="ui fluid image" src="marble.jpg">
+					<div class="overlay">
+						<div class="text-background">
+							Hackathon's Name<br>
+							<span class="small-text">Hack-a-SEN presents</span>
+						</div>
 					</div>
-					<div class="ui inverted section divider"></div>
-					<img src="logo.png" class="ui centered tiny image">
-					<p>&copy; 2024 ハッカ専-Hack-a-SEN-. All rights reserved.</p>
-					<div class="ui horizontal inverted small divided link list">
-						<a class="item" href="#">Our Projects</a>
-						<a class="item" href="#">Contact Us</a>
+				</div>
+			</header>
+
+			<div class="ui stackable grid">
+				<div class="sixteen wide mobile eight wide tablet four wide computer column">
+					<div class="ui segment">
+						<h2 id="section1" class="ui header">概要</h2>
+						<p>これはPCとスマホで表示されるコンテンツです。</p>
+					</div>
+				</div>
+				<div class="sixteen wide mobile eight wide tablet four wide computer column">
+					<div class="ui segment">
+						<h2 id="section2" class="ui header">当日の流れ</h2>
+						<p>これはPCとスマホで表示されるコンテンツです。</p>
+					</div>
+				</div>
+				<div class="sixteen wide mobile eight wide tablet four wide computer column">
+					<div class="ui segment">
+						<h2 id="section3" class="ui header">賞品</h2>
+						<p>これはPCとスマホで表示されるコンテンツです。</p>
+					</div>
+				</div>
+				<div class="sixteen wide mobile eight wide tablet four wide computer column">
+					<div class="ui segment">
+						<h2 id="section4" class="ui header">評価基準</h2>
+						<p>これはPCとスマホで表示されるコンテンツです。</p>
+					</div>
+				</div>
+				<div class="sixteen wide mobile eight wide tablet four wide computer column">
+					<div class="ui segment">
+						<h2 id="section5" class="ui header">エントリーフォーム</h2>
+						<p><button onclick="location.href='https://forms.gle/xMdnH2rU9mcv85mz5'" class="ui green button">
+								エントリーはこちら
+							</button></p>
 					</div>
 				</div>
 			</div>
-		</footer>
+
+			<footer>
+				<div class="ui inverted vertical footer segment">
+					<div class="ui center aligned container">
+						<div class="ui stackable inverted divided grid">
+						</div>
+						<div class="ui inverted section divider"></div>
+						<img src="logo.png" class="ui centered tiny image">
+						<p>&copy; 2024 ハッカ専-Hack-a-SEN-. All rights reserved.</p>
+						<div class="ui horizontal inverted small divided link list">
+							<a class="item" href="#">Our Projects</a>
+							<a class="item" href="#">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 	</div>
 
 </body>
