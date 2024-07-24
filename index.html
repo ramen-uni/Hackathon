@@ -63,6 +63,77 @@
 		.text-background .small-text {
 			font-size: 0.3em;
 		}
+
+		.center-text {
+			text-align: center;
+		}
+
+		.home-logo {
+			height: 40px;
+			/* 画像の高さを設定 */
+			width: auto;
+			/* 幅を自動調整 */
+			display: block;
+			/* 画像をブロック要素として表示 */
+		}
+
+		.ui.fixed.menu .item {
+			display: flex;
+			align-items: center;
+		}
+
+		.ui.fixed.menu .item img {
+			margin-right: 10px;
+		}
+
+		.button {
+			display: inline-block;
+			border-radius: 5%;
+			/* 角丸       */
+			font-size: 13pt;
+			/* 文字サイズ */
+			text-align: center;
+			/* 文字位置   */
+			cursor: pointer;
+			/* カーソル   */
+			padding: 9px 70px;
+			/* 余白       */
+			background: #00b300;
+			/* 背景色     */
+			color: #ffffff;
+			/* 文字色     */
+			line-height: 1em;
+			/* 1行の高さ  */
+			opacity: 0.9;
+			/* 透明度     */
+			transition: .3s;
+			/* なめらか変化 */
+			box-shadow: 1px 1px 11px #666666;
+			/* 影の設定 */
+		}
+
+		.button:hover {
+			box-shadow: none;
+			/* カーソル時の影消去 */
+			opacity: 1;
+			/* カーソル時透明度 */
+		}
+
+		.image-container {
+			display: flex;
+			gap: 80px;
+			/* 画像の間隔を調整 */
+		}
+
+		.image-container img {
+			max-width: 100px;
+			/* 画像の最大幅を設定 */
+		}
+
+		img.resize {
+			width: 65px;
+			height: 65px;
+		}
 	</style>
 </head>
 
@@ -81,9 +152,15 @@
 
 		<div class="ui fixed menu">
 			<div class="menu">
-				<div id="js-sidebar" class="item"><i class="icon large grey content"></i></div>
+				<div id="js-sidebar" class="item">
+					<i class="icon large grey content"></i>
+				</div>
+				<a href="index.html" class="item">
+					<img src="logo.png" alt="ホーム" class="home-logo">
+				</a>
 			</div>
 		</div>
+
 		<div class="container">
 
 			<div class="ui container">
@@ -99,7 +176,12 @@
 						</div>
 					</div>
 				</header>
-
+				<div class="center-text">
+					<br>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSdH95zqpJ6QHFmTrG7S2nmb5Qi7axwJvSfj_xh2SrWdgbIxIA/viewform"
+						class="button">エントリーする！</a>
+					<br><br>
+				</div>
 				<div class="ui stackable grid">
 					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
 						<div class="ui segment">
@@ -113,6 +195,19 @@
 								<li>学外に対して、本学部の学生がどのような活動をしているのかをアピールする</li>
 							</ul>
 							といったことを目的に開催します。
+
+							<ul>
+								<li>プロジェクトメンバー</li>
+								<ul>
+									<li>石井　健太郎　教授</li>
+									<li>高附　旭 (NE22-1176B)　リーダー</li>
+									<li>佐藤　奈桜花 (NE22-1070H)</li>
+									<li>落合　健晴 (NE22-1092G)</li>
+									<li>山谷　爽 (NE22-1120A)</li>
+									<li>堀川　知花 (NE22-1230B)</li>
+
+								</ul>
+							</ul>
 
 							</p>
 						</div>
@@ -186,43 +281,71 @@
 					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
 						<div class="ui segment">
 							<h2 id="section5" class="ui header">会場</h2>
-							<p>専修大学生田キャンパス</p>
+							<p>専修大学　生田キャンパス</p>
 						</div>
 					</div>
 					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
 						<div class="ui segment">
 							<h2 id="section6" class="ui header">応募要項</h2>
-							<p>専修大学のネットワーク情報学部生が参加することを想定しています！
-								<br>ぜひ2~5人のチームでご参加ください！
-								<br>1人での参加の場合、運営側が他の1人で参加いただいた方と即席チームを編成します！
-							</p>
-							<p><button
-									onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdH95zqpJ6QHFmTrG7S2nmb5Qi7axwJvSfj_xh2SrWdgbIxIA/viewform?usp=sharing'"
-									class="ui green button">
-									エントリーはこちら
-								</button></p>
+							<ul>
+								<li>専修大学のネットワーク情報学部生が参加することを想定しています</li>
+								<li>ぜひ2~5人のチームでご参加ください</li>
+								<li>1人での参加の場合、運営側が他の1人で参加いただいた方と即席チームを編成します</li>
+								<li>応募が完了次第、Directにて連絡を送らせて頂きます</li>
+							</ul><br><br>
+							<div class="center-text">
+								<h1>皆様のご応募お待ちしております！</h1>
+							</div>
+							<br><br><br>
+							<div class="center-text">
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSdH95zqpJ6QHFmTrG7S2nmb5Qi7axwJvSfj_xh2SrWdgbIxIA/viewform"
+									class="button">エントリーする！</a>
+							</div>
+							<br><br><br>
 						</div>
+						<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
+							<div class="ui segment">
+								<h2 id="section6" class="ui header">お問い合わせ</h2>
+								<p>ご不明点、質問等ございましたら下記の連絡先までお願いします。</p>
+								<ul>
+									<li>Direct</li>
+									<ul>
+										<li>NE22-1168B　高附旭</li>
+										<li>NE22-1120A　山谷爽</li>
+									</ul>
+								</ul>
+								<ul>
+									<li>SNS</li>
+									<div class="image-container">
+										<a href=https://x.com/Hack_a_SENshu target=”_blank”><img src="x.png" alt=”現X” class="resize"></a>
+										<a href=https://www.instagram.com/hack_a_sen/ target=”_blank”><img src="Instagram.png"
+												alt=”Instagram” class="resize"></a>
+									</div>
+								</ul>
+
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
+			<br><br>
 		</div>
-
-	</div>
-	<footer>
-		<div class="ui inverted vertical footer segment">
-			<div class="ui center aligned container">
-				<div class="ui stackable inverted divided grid">
-				</div>
-				<div class="ui inverted section divider"></div>
-				<img src="logo.png" class="ui centered tiny image">
-				<p>&copy; 2024 ハッカ専-Hack-a-SEN-. All rights reserved.</p>
-				<div class="ui horizontal inverted small divided link list">
-					<a class="item" href="#">Our Projects</a>
-					<a class="item" href="#">Contact Us</a>
+		<footer>
+			<div class="ui inverted vertical footer segment">
+				<div class="ui center aligned container">
+					<div class="ui stackable inverted divided grid">
+					</div>
+					<div class="ui inverted section divider"></div>
+					<img src="logo.png" class="ui centered tiny image">
+					<p>&copy; 2024 ハッカ専-Hack-a-SEN-. All rights reserved.</p>
+					<div class="ui horizontal inverted small divided link list">
+						<a class="item" href="#">Our Projects</a>
+						<a class="item" href="#">Contact Us</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
 	</div>
 
 	<script>
