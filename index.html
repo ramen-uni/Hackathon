@@ -2,7 +2,8 @@
 <html lang="ja">
 
 <head>
-	<title>ここにハッカソンの名前を入れたいよ</title>
+	<title>石井プロジェクト　電子工作ハッカソン</title>
+	<link rel="icon" href="logo.png">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CDNのコード -->
@@ -11,6 +12,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
 
 	<style>
+		body {
+			background-color: #fffdfa;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0px auto;
+		}
+
 		.wrap_original {
 			overflow: hidden;
 		}
@@ -60,11 +70,13 @@
 	<div class="wrap_original">
 		<div class="ui sidebar inverted vertical menu">
 			<a class="item" href="index.html">Hack-a-Sen</a>
-			<a class="item" href="#section1">概要</a>
-			<a class="item" href="#section2">当日の流れ</a>
-			<a class="item" href="#section3">賞品</a>
-			<a class="item" href="#section4">評価基準</a>
-			<a class="item" href="#section5">エントリーはこちら</a>
+			<a class="item" href="#section0">はじめに</a>
+			<a class="item" href="#section1">テーマ</a>
+			<a class="item" href="#section2">スケジュール</a>
+			<a class="item" href="#section3">表彰</a>
+			<a class="item" href="#section4">その他条件など</a>
+			<a class="item" href="#section5">会場</a>
+			<a class="item" href="#section6">エントリーはこちら</a>
 		</div>
 
 		<div class="ui fixed menu">
@@ -72,72 +84,145 @@
 				<div id="js-sidebar" class="item"><i class="icon large grey content"></i></div>
 			</div>
 		</div>
+		<div class="container">
 
-		<div class="ui container">
-			<br><br><br>
-			<header>
-				<div class="image-container">
-					<img class="ui fluid image" src="marble.jpg">
-					<div class="overlay">
-						<div class="text-background">
-							Hackathon's Name<br>
-							<span class="small-text">Hack-a-SEN presents</span>
+			<div class="ui container">
+				<br><br><br>
+				<header>
+					<div class="image-container">
+						<img class="ui fluid image" src="marble.jpg">
+						<div class="overlay">
+							<div class="text-background">
+								電気工作<br><br>ハッカソン<br>
+								<span class="small-text">Hack-a-SEN presents</span>
+							</div>
 						</div>
 					</div>
-				</div>
-			</header>
+				</header>
 
-			<div class="ui stackable grid">
-				<div class="sixteen wide mobile eight wide tablet eight wide computer column">
-					<div class="ui segment">
-						<h2 id="section1" class="ui header">概要</h2>
-						<p>ここに各項目の本文を記入してください。</p>
+				<div class="ui stackable grid">
+					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
+						<div class="ui segment">
+							<h2 id="section0" class="ui header">はじめに</h2>
+							<p>本企画は専修大学ネットワーク情報学部　石井プロジェクト2024が企画・運営するハッカソンです。
+								<br>専修大学ネットワーク情報学部では、過去に「ネ学ハッカソン」という名称で教員主体の学内ハッカソンが開催されていました。しかし、新型コロナウイルスの影響により、現役の学生が入学してからは一度も開催されていません。このカルチャーを復活させようとしています。
+							<ul>
+								<li>学生が新しい技術に触れる機会を提供する</li>
+								<li>学生個人でなくチームで連携する力を身につける</li>
+								<li>学生同士が切磋琢磨することによって、学生の意欲向上を図る</li>
+								<li>学外に対して、本学部の学生がどのような活動をしているのかをアピールする</li>
+							</ul>
+							といったことを目的に開催します。
+
+							</p>
+						</div>
 					</div>
-				</div>
-				<div class="sixteen wide mobile eight wide tablet eight wide computer column">
-					<div class="ui segment">
-						<h2 id="section2" class="ui header">当日の流れ</h2>
-						<p>ここに各項目の本文を記入してください。</p>
+					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
+						<div class="ui segment">
+							<h2 id="section1" class="ui header">テーマ</h2>
+							<p>今回のテーマは"マイコンを使うこと"です！貸し出し用のマイコンやセンサは用意していますが、使いたいマイコン、センサがある場合は用意していただいても結構です！マイコンに関する簡単な講習会も実施予定です！
+							</p>
+						</div>
 					</div>
-				</div>
-				<div class="sixteen wide mobile eight wide tablet eight wide computer column">
-					<div class="ui segment">
-						<h2 id="section3" class="ui header">賞品</h2>
-						<p>ここに各項目の本文を記入してください。</p>
+					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
+						<div class="ui segment">
+							<h2 id="section2" class="ui header">スケジュール</h2>
+							<ul>
+								<li>7/24~9/20 エントリー期間</li>
+								<li>9/21~10/4 いずれかの日程で3Dプリンター、レーザーカッター、マイコン講習会実施 </li>
+								<ul>
+									<li>参加は任意</li>
+								</ul><br>
+								<li>10/5</li>
+								<ul>
+									<li>10:00~　開会式</li>
+									<li>11:00~　制作開始</li>
+									<li>~19:00　解散</li>
+								</ul>
+								<li>10/6</li>
+								<ul>
+									<li>10:00~　制作開始</li>
+									<li>16:00~　発表</li>
+									<li>終わり次第、懇親会を予定</li>
+								</ul>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="sixteen wide mobile eight wide tablet eight wide computer column">
-					<div class="ui segment">
-						<h2 id="section4" class="ui header">評価基準</h2>
-						<p>ここに各項目の本文を記入してください。</p>
+					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
+						<div class="ui segment">
+							<h2 id="section3" class="ui header">表彰</h2>
+							<ul>
+								<li>最優秀賞</li>
+								<ul>
+									<li>総合的に最も優秀だったチームに送られます。</li>
+								</ul>
+								<li>優秀賞</li>
+								<ul>
+									<li>総合的に次点で優秀だったチームに送られます。</li>
+								</ul>
+								<li>アイデア賞</li>
+								<ul>
+									<li>最も優れたアイデアだったチームに送られます。</li>
+								</ul>
+							</ul>
+							<p>※複数受賞はありません</p>
+							<p>※賞について色々変更がある可能性があります</p>
+						</div>
 					</div>
-				</div>
-				<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
-					<div class="ui segment">
-						<h2 id="section5" class="ui header">エントリーフォーム</h2>
-						<p><button onclick="location.href='https://forms.gle/xMdnH2rU9mcv85mz5'" class="ui green button">
-								<！<<<<<<------------エントリーはこちら--------------->>>>>>>>
-							</button></p>
+					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
+						<div class="ui segment">
+							<h2 id="section4" class="ui header">その他条件など</h2>
+							<ul>
+								<li>必ずマイコンを使うこと</li>
+								<li>1日目で開発、2日目で開発と発表すること</li>
+								<li>用意されている以外のマイコン、センサなどを使いたい場合は自分で用意すること</li>
+								<li>2人以上5人以下のチームで開発すること</li>
+								<li>1人応募の場合は基本的に即席チームを結成</li>
+								<li>優秀な作品はプロジェクト発表会で展示のお願いをさせていただく場合があります</li>
+								<li>貸し出したものは基本回収します</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
+						<div class="ui segment">
+							<h2 id="section5" class="ui header">会場</h2>
+							<p>専修大学生田キャンパス</p>
+						</div>
+					</div>
+					<div class="sixteen wide mobile sixteen wide tablet sixteen wide computer column">
+						<div class="ui segment">
+							<h2 id="section6" class="ui header">応募要項</h2>
+							<p>専修大学のネットワーク情報学部生が参加することを想定しています！
+								<br>ぜひ2~5人のチームでご参加ください！
+								<br>1人での参加の場合、運営側が他の1人で参加いただいた方と即席チームを編成します！
+							</p>
+							<p><button
+									onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdH95zqpJ6QHFmTrG7S2nmb5Qi7axwJvSfj_xh2SrWdgbIxIA/viewform?usp=sharing'"
+									class="ui green button">
+									エントリーはこちら
+								</button></p>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<footer>
-				<div class="ui inverted vertical footer segment">
-					<div class="ui center aligned container">
-						<div class="ui stackable inverted divided grid">
-						</div>
-						<div class="ui inverted section divider"></div>
-						<img src="logo.png" class="ui centered tiny image">
-						<p>&copy; 2024 ハッカ専-Hack-a-SEN-. All rights reserved.</p>
-						<div class="ui horizontal inverted small divided link list">
-							<a class="item" href="#">Our Projects</a>
-							<a class="item" href="#">Contact Us</a>
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
+
+	</div>
+	<footer>
+		<div class="ui inverted vertical footer segment">
+			<div class="ui center aligned container">
+				<div class="ui stackable inverted divided grid">
+				</div>
+				<div class="ui inverted section divider"></div>
+				<img src="logo.png" class="ui centered tiny image">
+				<p>&copy; 2024 ハッカ専-Hack-a-SEN-. All rights reserved.</p>
+				<div class="ui horizontal inverted small divided link list">
+					<a class="item" href="#">Our Projects</a>
+					<a class="item" href="#">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 	</div>
 
 	<script>
